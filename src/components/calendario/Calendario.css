@@ -1,0 +1,111 @@
+html, body {
+    /*background: #e5e5e5;*/
+    background: #ffffff;
+    font-family: sans-serif;
+    max-width: 1200px;
+}
+
+.anio-container {
+    display: inline-flexbox;
+    max-width: 1050px;
+}
+
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-container {
+    border: 2px solid skyblue;
+    width: 250px;
+    height: 220px;
+    margin: 0.2rem;
+    position: relative;
+	overflow: hidden;
+	float: left;
+    
+}
+
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar-header {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
+}
+
+.calendar-header td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 40px;
+}
+
+.week-day {
+    font-size: 0.8em;
+}
+
+.day {
+    font-size: 0.8em;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.day:hover {
+	background: yellow;
+}
+
+.current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+.selected-day {
+    background-color: #d4a474;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+.nav-month {
+    position: absolute;
+    top: 0.6em;
+    font-size: 0.6em;
+    right:3px;
+}
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.label-month,
+.label-year {
+    font-size: 0.6em;
+}
+
+/*.label-month {
+    cursor: pointer;
+}*/
